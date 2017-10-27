@@ -1,0 +1,126 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.16
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Messaging.Transport.Abstractions", "Messaging.Transport.Abstractions\Messaging.Transport.Abstractions.csproj", "{F736A48C-7DC4-4AA0-A40C-7C257E69119D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Messaging.Transport.Http", "Messaging.Transport.Http\Messaging.Transport.Http.csproj", "{0310423B-E2FE-4A6E-AC8A-7D413FE5B99F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Messaging.Transport.Kafka", "Messaging.Transport.Kafka\Messaging.Transport.Kafka.csproj", "{FFB54A7F-42BC-492F-BD6A-081E36297656}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Messaging.Transport.Kafka.Avro", "Messaging.Transport.Kafka.Avro\Messaging.Transport.Kafka.Avro.csproj", "{095F7DA2-5315-464D-B2FF-D7E9D3448F05}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Messaging.Transport.Kafka.SchemaRegistry.Client", "Messaging.Transport.Kafka.SchemaRegistry.Client\Messaging.Transport.Kafka.SchemaRegistry.Client.csproj", "{3A7DBD0B-6CE6-441D-A596-F327DD6A9ED8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Integration", "Integration", "{D7032DD9-26EF-4ED4-ACF9-5E91A89582C7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimpleInjector.Integration.Messaging.Transport", "SimpleInjector.Integration.Messaging.Transport\SimpleInjector.Integration.Messaging.Transport.csproj", "{472DEE7C-FA72-4D72-9FE7-BBC65BEE3768}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimpleInjector.Integration.Messaging.Transport.Http", "SimpleInjector.Integration.Messaging.Transport.Http\SimpleInjector.Integration.Messaging.Transport.Http.csproj", "{90DA48F9-89BC-4EF2-B017-BB726CF059CB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimpleInjector.Integration.Messaging.Transport.Kafka", "SimpleInjector.Integration.Messaging.Transport.Kafka\SimpleInjector.Integration.Messaging.Transport.Kafka.csproj", "{B62FC410-7193-4998-AD33-FA8490C22D13}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimpleInjector.Integration.Messaging.Transport.Kafka.Avro", "SimpleInjector.Integration.Messaging.Transport.Kafka.Avro\SimpleInjector.Integration.Messaging.Transport.Kafka.Avro.csproj", "{DA5AE324-7D78-4C4A-9BF8-DDE09E6B413B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MediatR.Integration.Messaging.Transport", "MediatR.Integration.Messaging.Transport\MediatR.Integration.Messaging.Transport.csproj", "{F56A6933-7C71-496D-A027-9ABF7C9BD87C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F736A48C-7DC4-4AA0-A40C-7C257E69119D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F736A48C-7DC4-4AA0-A40C-7C257E69119D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F736A48C-7DC4-4AA0-A40C-7C257E69119D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F736A48C-7DC4-4AA0-A40C-7C257E69119D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0310423B-E2FE-4A6E-AC8A-7D413FE5B99F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0310423B-E2FE-4A6E-AC8A-7D413FE5B99F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0310423B-E2FE-4A6E-AC8A-7D413FE5B99F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0310423B-E2FE-4A6E-AC8A-7D413FE5B99F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FFB54A7F-42BC-492F-BD6A-081E36297656}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FFB54A7F-42BC-492F-BD6A-081E36297656}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FFB54A7F-42BC-492F-BD6A-081E36297656}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FFB54A7F-42BC-492F-BD6A-081E36297656}.Release|Any CPU.Build.0 = Release|Any CPU
+		{095F7DA2-5315-464D-B2FF-D7E9D3448F05}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{095F7DA2-5315-464D-B2FF-D7E9D3448F05}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{095F7DA2-5315-464D-B2FF-D7E9D3448F05}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{095F7DA2-5315-464D-B2FF-D7E9D3448F05}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3A7DBD0B-6CE6-441D-A596-F327DD6A9ED8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A7DBD0B-6CE6-441D-A596-F327DD6A9ED8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A7DBD0B-6CE6-441D-A596-F327DD6A9ED8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A7DBD0B-6CE6-441D-A596-F327DD6A9ED8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{472DEE7C-FA72-4D72-9FE7-BBC65BEE3768}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{472DEE7C-FA72-4D72-9FE7-BBC65BEE3768}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{472DEE7C-FA72-4D72-9FE7-BBC65BEE3768}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{472DEE7C-FA72-4D72-9FE7-BBC65BEE3768}.Release|Any CPU.Build.0 = Release|Any CPU
+		{90DA48F9-89BC-4EF2-B017-BB726CF059CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90DA48F9-89BC-4EF2-B017-BB726CF059CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90DA48F9-89BC-4EF2-B017-BB726CF059CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90DA48F9-89BC-4EF2-B017-BB726CF059CB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B62FC410-7193-4998-AD33-FA8490C22D13}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B62FC410-7193-4998-AD33-FA8490C22D13}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B62FC410-7193-4998-AD33-FA8490C22D13}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B62FC410-7193-4998-AD33-FA8490C22D13}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA5AE324-7D78-4C4A-9BF8-DDE09E6B413B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA5AE324-7D78-4C4A-9BF8-DDE09E6B413B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA5AE324-7D78-4C4A-9BF8-DDE09E6B413B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA5AE324-7D78-4C4A-9BF8-DDE09E6B413B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F56A6933-7C71-496D-A027-9ABF7C9BD87C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F56A6933-7C71-496D-A027-9ABF7C9BD87C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F56A6933-7C71-496D-A027-9ABF7C9BD87C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F56A6933-7C71-496D-A027-9ABF7C9BD87C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{472DEE7C-FA72-4D72-9FE7-BBC65BEE3768} = {D7032DD9-26EF-4ED4-ACF9-5E91A89582C7}
+		{90DA48F9-89BC-4EF2-B017-BB726CF059CB} = {D7032DD9-26EF-4ED4-ACF9-5E91A89582C7}
+		{B62FC410-7193-4998-AD33-FA8490C22D13} = {D7032DD9-26EF-4ED4-ACF9-5E91A89582C7}
+		{DA5AE324-7D78-4C4A-9BF8-DDE09E6B413B} = {D7032DD9-26EF-4ED4-ACF9-5E91A89582C7}
+		{F56A6933-7C71-496D-A027-9ABF7C9BD87C} = {D7032DD9-26EF-4ED4-ACF9-5E91A89582C7}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 11
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://tfs9:8080/tfs/sod
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Messaging.Transport.Abstractions\\Messaging.Transport.Abstractions.csproj
+		SccProjectName1 = Messaging.Transport.Abstractions
+		SccLocalPath1 = Messaging.Transport.Abstractions
+		SccProjectUniqueName2 = Messaging.Transport.Http\\Messaging.Transport.Http.csproj
+		SccProjectName2 = Messaging.Transport.Http
+		SccLocalPath2 = Messaging.Transport.Http
+		SccProjectUniqueName3 = Messaging.Transport.Kafka.Avro\\Messaging.Transport.Kafka.Avro.csproj
+		SccProjectName3 = Messaging.Transport.Kafka.Avro
+		SccLocalPath3 = Messaging.Transport.Kafka.Avro
+		SccProjectUniqueName4 = Messaging.Transport.Kafka\\Messaging.Transport.Kafka.csproj
+		SccProjectName4 = Messaging.Transport.Kafka
+		SccLocalPath4 = Messaging.Transport.Kafka
+		SccProjectUniqueName5 = Messaging.Transport.Kafka.SchemaRegistry.Client\\Messaging.Transport.Kafka.SchemaRegistry.Client.csproj
+		SccProjectName5 = Messaging.Transport.Kafka.SchemaRegistry.Client
+		SccLocalPath5 = Messaging.Transport.Kafka.SchemaRegistry.Client
+		SccProjectUniqueName6 = SimpleInjector.Integration.Messaging.Transport\\SimpleInjector.Integration.Messaging.Transport.csproj
+		SccProjectTopLevelParentUniqueName6 = Messaging.sln
+		SccProjectName6 = SimpleInjector.Integration.Messaging.Transport
+		SccLocalPath6 = SimpleInjector.Integration.Messaging.Transport
+		SccProjectUniqueName7 = SimpleInjector.Integration.Messaging.Transport.Http\\SimpleInjector.Integration.Messaging.Transport.Http.csproj
+		SccProjectTopLevelParentUniqueName7 = Messaging.sln
+		SccProjectName7 = SimpleInjector.Integration.Messaging.Transport.Http
+		SccLocalPath7 = SimpleInjector.Integration.Messaging.Transport.Http
+		SccProjectUniqueName8 = SimpleInjector.Integration.Messaging.Transport.Kafka\\SimpleInjector.Integration.Messaging.Transport.Kafka.csproj
+		SccProjectTopLevelParentUniqueName8 = Messaging.sln
+		SccProjectName8 = SimpleInjector.Integration.Messaging.Transport.Kafka
+		SccLocalPath8 = SimpleInjector.Integration.Messaging.Transport.Kafka
+		SccProjectUniqueName9 = SimpleInjector.Integration.Messaging.Transport.Kafka.Avro\\SimpleInjector.Integration.Messaging.Transport.Kafka.Avro.csproj
+		SccProjectTopLevelParentUniqueName9 = Messaging.sln
+		SccProjectName9 = SimpleInjector.Integration.Messaging.Transport.Kafka.Avro
+		SccLocalPath9 = SimpleInjector.Integration.Messaging.Transport.Kafka.Avro
+		SccProjectUniqueName10 = MediatR.Integration.Messaging.Transport\\MediatR.Integration.Messaging.Transport.csproj
+		SccProjectTopLevelParentUniqueName10 = Messaging.sln
+		SccProjectName10 = MediatR.Integration.Messaging.Transport
+		SccLocalPath10 = MediatR.Integration.Messaging.Transport
+	EndGlobalSection
+EndGlobal

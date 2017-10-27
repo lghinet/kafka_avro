@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup Label="Globals">
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp1.1</TargetFramework>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Authors>Totalsoft</Authors>
+    <Company>Totalsoft</Company>
+    <Version>1.0.3</Version>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="SimpleInjector.Integration.Messaging.Transport.Kafka.csproj.vspscc" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Messaging.Transport.Kafka\Messaging.Transport.Kafka.csproj" />
+    <ProjectReference Include="..\SimpleInjector.Integration.Messaging.Transport\SimpleInjector.Integration.Messaging.Transport.csproj" />
+  </ItemGroup>
+
+</Project>

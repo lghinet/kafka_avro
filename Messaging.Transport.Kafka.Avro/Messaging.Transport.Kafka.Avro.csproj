@@ -1,0 +1,33 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup Label="Globals">
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp1.1</TargetFramework>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <PackageRequireLicenseAcceptance>False</PackageRequireLicenseAcceptance>
+    <Version>1.0.1</Version>
+    <Authors>Totalsoft</Authors>
+    <Company>Totalsoft</Company>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Messaging.Transport.Kafka.Avro.csproj.vspscc" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Confluent.Kafka" Version="0.11.0" />
+    <PackageReference Include="Microsoft.Hadoop.Avro-Core" Version="1.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Messaging.Transport.Kafka.SchemaRegistry.Client\Messaging.Transport.Kafka.SchemaRegistry.Client.csproj" />
+    <ProjectReference Include="..\Messaging.Transport.Kafka\Messaging.Transport.Kafka.csproj" />
+  </ItemGroup>
+
+</Project>
